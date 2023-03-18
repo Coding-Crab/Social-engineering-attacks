@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Social Engineering Attacks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Social Engineering Attacks</h1>
+    <p>A Generator words Based Social Engineering Attacks To Getting Some Information About Target Specified</p>
+    <span>by Coding Crab</span>
+  </div>
+  <form>
+    <label for="question1">Any names (No spaces, comma seperated):</label>
+    
+    <input type="text" id="question1">
+    
+    <br>
+    <label for="question2">Any Keywords like nicknames, job, movies, series...(No spaces, comma seperated):</label>
+    
+    <input type="text" id="question2">
+    
+    <br>
+    <label for="question3">Any birthdays or dates you know (Format: [dd-mm-yy], comma seperated):</label>
+    
+    <input type="text" id="question3">
+    
+    <br>
+  <label for="question4">Any phone numbers you know (Format: [+Countrycodexx...], comma seperated):</label>
+  
+    <input type="text" id="question4">
+    
+    <br>
+     <label for="question5">Old Passwords or words you think new passwords will be made out of it (comma seperated)</label>
+     
+    <input type="text" id="question5">
+    <br>
+
+<div class="d-flex">
+  <button type="button" style="
+    margin-right: 15px;
+" onclick="generateWord()">Generate</button>
+  <button id="export-button"  style="
+    margin-left: 0px;
+" type="button">Export</button>
+
+</div>
+
+  </form>
+  <div class="out">
+    <p>OUTPUT:</p>
+    <div id="output"></div>
+  </div>
+
+  <h2>History</h2>
+  <div id="history"></div>
+  <button type="button" onclick="clearHistory()">Clear History</button>
+
+<script src="./app.js"></script>
+</body>
+</html>
+
